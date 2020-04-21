@@ -6,6 +6,13 @@ describe "fizzbuzz" do
 
   it 'returns "Buzz" when the number is divisible by 5' do
     fizz_5 = fizzbuzz(5)
+
     expect fizz_5.to eq("Buzz")
+  end
+
+  it 'returns "FizzBuzz" when the number is divisible by 3 and divisible by 5' do
+    fizz_15 = fizzbuzz(15)
+
+    expect fizz_15.to eq("FizzBuzz")
   end
 end
